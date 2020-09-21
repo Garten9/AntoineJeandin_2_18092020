@@ -1,5 +1,42 @@
+body
+{
+  font-size: 0.8em;
+}
+
+#hebergement
+{
+  background-color: gray;
+}
+
 .hebergement
 {
-  border: 5px black solid;
+  border: 5px white solid;
   border-radius: 15px;
+  width: 236px;
+/*  position: relative;
+  z-index: 1;*/
+
+}
+
+img
+{
+  /*border-radius : 10px;*/
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+ /* position: relative;
+  right: 1px;
+  z-index: 2*/;
+ /* width: 236px;
+  height: 114px;*/
+  /*background: url(img/auberge_cannebiere.jpg) no-repeat;*/
+}
+
+.text
+{
+  width: 225px;
+  margin-left: -2px;
+  font-size: 12px;
+  padding-left: 16px;
+  margin-top: -5px;
+  background-color: white;
 }
