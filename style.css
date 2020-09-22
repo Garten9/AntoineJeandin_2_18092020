@@ -1,6 +1,58 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('font/Raleway.ttf') format('truetype'),
+  url('font/Raleway.eot') format('eot'),
+  url('font/Raleway.woff') format('woff'),
+  url('font/Raleway.svg') format('svg');
+}
+
+
 body
 {
-  font-size: 0.8em;
+  font-size: 1em;
+  font-family: Raleway, Arial, "Times New Roman", serif;
+  width: 1340px;
+  margin: auto;
+}
+
+#top
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+#top_right
+{
+  display: flex;
+}
+
+nav
+{
+  display: flex;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 20px;
+
+  padding-top: 10px;
+}
+
+a:hover
+{
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+
+}
+
+#inscrire
+{
+  color: #0065FC;
 }
 
 #hebergement
@@ -42,14 +94,6 @@ img
   /*background-color: white;*/
 }
 
-img[src*="icone"]
-{
-width: 13px;
-color: blue;
-color-profile: blue;
-color-rendering: blue;
-background-color: blue;
-}
 
 i
 {
