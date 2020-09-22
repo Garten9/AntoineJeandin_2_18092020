@@ -5,7 +5,7 @@ body
 
 #hebergement
 {
-  background-color: gray;
+  background-color: #F2F2F2;
 }
 
 .hebergement
@@ -13,6 +13,7 @@ body
   border: 5px white solid;
   border-radius: 15px;
   width: 236px;
+  background-color: white;
 /*  position: relative;
   z-index: 1;*/
 
@@ -38,5 +39,19 @@ img
   font-size: 12px;
   padding-left: 16px;
   margin-top: -5px;
-  background-color: white;
+  /*background-color: white;*/
+}
+
+img[src*="icone"]
+{
+width: 13px;
+color: blue;
+color-profile: blue;
+color-rendering: blue;
+background-color: blue;
+}
+
+i
+{
+  color: blue;
 }
