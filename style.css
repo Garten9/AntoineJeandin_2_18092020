@@ -38,7 +38,12 @@ nav
   display: flex;
 }
 
-a
+#top #inscrire
+{
+  color: #0065FC;
+}
+
+#top a
 {
   text-decoration: none;
   color: black;
@@ -47,20 +52,22 @@ a
   padding-left: 10px;
   margin-right: 20px;
 
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
-a:hover
+section a
+{
+  text-decoration: none;
+  color: black;
+}
+
+#top a:hover
 {
   color: #0065FC;
   border-top: 2px solid #0065FC;
 
 }
 
-#inscrire
-{
-  color: #0065FC;
-}
 
 #form
 {
@@ -126,6 +133,11 @@ input[type="text"]
   margin-left: 25px;
 }
 
+.filtre:hover
+{
+  box-shadow: 4px 4px 6px #DEEBFF;
+}
+
 .filtre div
 {
   display: flex;
@@ -149,6 +161,8 @@ input[type="text"]
 {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #info div
@@ -316,6 +330,7 @@ input[type="text"]
 {
   position: relative;
   height: 130px;
+  width: 190px;
 }
 
 .populaires .text p
@@ -329,6 +344,62 @@ input[type="text"]
   bottom: 0px;
 }
 
+#activites
+{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.activite
+{
+  border-radius: 15px;
+  box-shadow: 6px 6px 15px lightgray;
+}
+
+.activite img
+{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.activite .text
+{
+  padding-bottom: 10px;
+  width: 270px;
+}
+
+.column
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#activites_items
+{
+  height: 450px;
+  max-height: 450px;
+  display: flex;
+  justify-content: space-between;
+  width: 1340px;
+  /*font-weight: bold;*/
+}
+
+footer
+{
+  display: flex;
+  background-color: #F2F2F2;
+  /*width: 100%;*/
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  /*padding-right: */
+}
+
+footer section
+{
+  margin-right: 220px;
+}
 
 i
 {
