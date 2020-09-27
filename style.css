@@ -200,6 +200,7 @@ input[type="text"]
   border:1px solid #F2F2F2;
   border-radius: 50%;
   width: 22px;
+  min-width: 22px;
   height: 22px;
   margin-right: 10px;
 }
@@ -317,7 +318,7 @@ input[type="text"]
 {
   color: black;
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 40px;
 }
 
@@ -520,8 +521,8 @@ i
 
   #form
   {
-    width: 80%;
-    margin-left: 20px;
+    width: 90%;
+    margin: auto;
   }
 
   #form p strong
@@ -546,7 +547,8 @@ i
   input[type="text"]
   {
    width: 80%;
-
+   min-width: 100px;
+   font-size: 0.8em;
   }
 
   form
@@ -554,6 +556,115 @@ i
     display: contents;
   }
 
+  #info div
+  {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    border:2px solid #F2F2F2;
+    margin-left: 20px;
+  }
 
+  .text
+  {
+    font-size: 0.6em;
+  }
 
+  .text h2
+  {
+    font-size: 1.2em;
+  }
+
+  #content
+  {
+    flex-direction: column;
+  }
+
+  #populaires
+  {
+    border-radius: 0px;
+    order: 1;
+    width: 100%;
+    min-width: 0px;
+    height: 570px;
+
+  }
+
+  .debut
+  {
+    font-size: 0.9em;
+  }
+
+  #populaires_items
+  {
+    width: auto;
+    height: 460px;
+  }
+
+  #hebergement
+  {
+    order:2;
+  }
+
+  #activites
+  {
+    order: 3;
+  }
+
+  section a
+  {
+    width: 90%;
+  }
+
+  .populaires
+  {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .populaires .text p
+  {
+    margin-top: -10px;
+  }
+
+  #hebergement
+  {
+    background-color: white;
+    width: 100%;
+  }
+
+  .hebergement
+  {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height:auto;
+  }
+
+  .hebergement img
+  {
+    /*height: 114px;*/
+    width: -webkit-fill-available;
+  }
+
+  .star .fa-sm
+  {
+    font-size: .7em;
+  }
+
+  .fin
+  {
+    margin-top: 20px;
+  }
+
+  #activites
+  {
+    margin-top: 0px;
+  }
+
+  #activites_title
+  {
+    margin-left: 20px;
+  }
 }
