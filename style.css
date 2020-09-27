@@ -601,10 +601,6 @@ i
     height: 460px;
   }
 
-  #hebergement
-  {
-    order:2;
-  }
 
   #activites
   {
@@ -614,6 +610,7 @@ i
   section a
   {
     width: 90%;
+    margin: auto;
   }
 
   .populaires
@@ -632,11 +629,21 @@ i
   {
     background-color: white;
     width: 100%;
+    order:2;
   }
+
+  #hebergement_items
+  {
+    /*flex-direction: column;*/
+  }
+
+
+
+
 
   .hebergement
   {
-    margin: auto;
+    /*margin: auto;*/
     margin-bottom: 20px;
     width: 100%;
     height:auto;
@@ -666,5 +673,18 @@ i
   #activites_title
   {
     margin-left: 20px;
+  }
+
+  #activites_items
+  {
+    height: auto;
+    max-height: none;
+    width: auto;
+    flex-direction: column;
+  }
+
+  footer
+  {
+    flex-direction: column;
   }
 }
