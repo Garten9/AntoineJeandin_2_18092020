@@ -390,6 +390,30 @@ input[type="text"]
   border-top-right-radius: 15px;
 }
 
+.imgact
+{
+  background-size: cover;
+  width: 302px;
+  height: 389px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.fort
+{
+  height: 181px;
+}
+
+.frioul
+{
+  height: 109px;
+}
+
+.garde_longchamp
+{
+  height: 145px;
+}
+
 .activite .text
 {
   padding-bottom: 10px;
@@ -668,6 +692,7 @@ i
   #activites
   {
     margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   #activites_title
@@ -683,8 +708,59 @@ i
     flex-direction: column;
   }
 
+  .imgact
+  {
+    height:135px;
+    width: auto;
+    background-position-y: -110px;
+  }
+
+  .fort
+  {
+    background-position-y: -50px;
+  }
+
+  .frioul
+  {
+    background-position-y: 0px;
+  }
+
+  .calanques
+  {
+    background-position-y: -220px;
+  }
+
+  .garde_longchamp
+  {
+    background-position-y: -20px;
+  }
+
+  #activites a
+  {
+    width: 335px;
+    margin-bottom: 30px;
+  }
+
+  .activite .text
+  {
+    width: auto;
+    padding-bottom: 1px;
+  }
+
+  h3
+  {
+    font-size: 1em;
+  }
+
   footer
   {
     flex-direction: column;
+    font-size: 0.7em;
   }
+
+  footer section
+  {
+    margin-right: 0px;
+  }
+
 }
