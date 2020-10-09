@@ -17,6 +17,8 @@ body
 {
   width: 95%;
   margin:auto;
+  max-width: 1450px;
+
 }
 
 #logo
@@ -33,10 +35,6 @@ body
   position: relative;
 }
 
-#top_right
-{
-  /*display: flex;*/
-}
 
 nav
 {
@@ -81,7 +79,6 @@ nav a:hover, #top #inscrire:hover
 {
   color: #0065FC;
   border-top: 2px solid #0065FC;
-
 }
 
 
@@ -93,9 +90,6 @@ nav a:hover, #top #inscrire:hover
   width: 435px;
   height: 51px;
   align-items: center;
-  /*justify-content: space-between;*/
-
-
 }
 
 .fa-map-marker-alt
@@ -103,8 +97,6 @@ nav a:hover, #top #inscrire:hover
   color: black;
   padding-left: 19px;
   padding-right: 19px;
-
-
 }
 
 #form p strong
@@ -125,6 +117,7 @@ nav a:hover, #top #inscrire:hover
 {
   display: none;
 }
+
 input[type="text"]
 {
   width: 234px;
@@ -134,7 +127,6 @@ input[type="text"]
   padding-left: 15px;
   font-weight: bold;
   font-size: 1.2em;
-
 }
 
 
@@ -174,7 +166,6 @@ input[type="text"]
   width: 50px;
   background-color: #DEEBFF;
   border-radius: 50%;
-  /*margin-top: -2px;*/
   margin-left: -2px;
 }
 
@@ -219,7 +210,6 @@ input[type="text"]
   background-color: #F2F2F2;
   border-radius: 15px;
   width: 66%;
-  /*min-width: 880px;*/
   min-height: 625px;
   margin-bottom: 10px;
 }
@@ -285,15 +275,8 @@ input[type="text"]
 
 .hebergement img
 {
-  /*border-radius : 10px;*/
   border-top-left-radius: 10px;
   border-top-right-radius:10px;
- /* position: relative;
-  right: 1px;
-  z-index: 2*/;
- /* width: 236px;
-  height: 114px;*/
-  /*background: url(img/auberge_cannebiere.jpg) no-repeat;*/
 }
 
 .text
@@ -311,7 +294,6 @@ input[type="text"]
   background-color: #F2F2F2;
   border-radius: 15px;
   height: 625px;
-
 }
 
 .fa-chart-line
@@ -328,7 +310,6 @@ input[type="text"]
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /*width: 420px;*/
   height: 500px;
 }
 
@@ -341,13 +322,8 @@ input[type="text"]
 .populaires
 {
   display: flex;
-  /*align-items: center;*/
-  /*align-content: center;*/
-  /*border: 5px white solid;*/
   border-radius: 15px;
-  /*width: 343px;*/
   background-color: white;
-  /*margin-bottom: 30px;*/
   height: 144px;
   box-shadow: 6px 6px 15px lightgray;
 }
@@ -424,7 +400,6 @@ input[type="text"]
 .activite .text
 {
   padding-bottom: 10px;
-  /*width: 270px;*/
 }
 
 .column
@@ -440,9 +415,6 @@ input[type="text"]
   max-height: 450px;
   display: flex;
   justify-content: space-between;
-
-  /*width: 1340px;*/
-  /*font-weight: bold;*/
 }
 
 footer
@@ -452,7 +424,9 @@ footer
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 50px;
-  /*padding-right: */
+  width: 95%;
+  margin: auto;
+  max-width: 1450px;
 }
 
 footer section
@@ -493,7 +467,6 @@ i
   nav
   {
     display: flex;
-    /*justify-content: space-around;*/
     width: 100%;
     margin-right: 0px;
     margin-top: 30px;
@@ -521,8 +494,6 @@ i
   {
     border-top: none;
   }
-
-
 
   h1
   {
@@ -664,18 +635,8 @@ i
     order:2;
   }
 
-  #hebergement_items
-  {
-    /*flex-direction: column;*/
-  }
-
-
-
-
-
   .hebergement
   {
-    /*margin: auto;*/
     margin-bottom: 20px;
     width: 100%;
     height:auto;
@@ -683,7 +644,6 @@ i
 
   .hebergement img
   {
-    /*height: 114px;*/
     width: -webkit-fill-available;
   }
 
