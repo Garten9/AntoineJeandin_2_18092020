@@ -5,15 +5,15 @@
   <meta charset="utf-8" />
   <meta name="description" content="Site de réservation d'hébergements de vacances">
   <meta name="keywords" content="Réservation, vacances, hébergements">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- permet de récupérer la largeur de l'écran de l'utilisateur -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <title>Reservia</title>
 </head>
 
 <body>
-  <div id="page">
-    <header>
+  <div id="page"> <!-- contient toute la page sauf le footer -->
+    <header> <!-- logo, onglet nav, titre et sous-titre -->
       <div id="top">
 
         <img id="logo" src="img/logo.png" alt="Logo de Reservia">
@@ -32,7 +32,7 @@
     </header>
 
 
-    <section id="search">
+    <section id="search"> <!-- recherche de ville -->
       <div id="form">
         <i class="fas fa-map-marker-alt"></i>
         <form method="post" action="action.php">
@@ -44,7 +44,7 @@
         </p>
       </div>
 
-      <div id="filtres">
+      <div id="filtres"> <!-- section contenant les differents filtres -->
 
         <h4>Filtres</h4>
 
@@ -79,12 +79,12 @@
       <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
     </section>
 
-    <div id="content">
-      <section id="hebergement">
+    <div id="content"> <!-- section contenant les hebergements à marseille, les plus populaires et les activités a marseille -->
+      <section id="hebergement"> <!-- section contenant les hebergement à marseille -->
         <h2 class="debut">Hébergements à Marseille</h2>
         <div id="hebergement_items">
 
-          <a href="">
+          <a href=""> <!-- carte cliquable de l'hebergement, pour l'instant le lien est vide -->
             <div class="hebergement">
               <div class="imgheb">
               <img src="img/auberge_cannebiere.jpg" alt="Photo de l'auberge Cannebière">
@@ -95,7 +95,7 @@
               <p>Nuit à partir de <strong>25€</strong></p>
             </div>
 
-            <div class="star">
+            <div class="star"> <!-- etoiles de notation de l'hebergement -->
               <i class="fas fa-star fa-sm"></i><i class="fas fa-star fa-sm"></i><i class="fas fa-star fa-sm"></i><i class="fas fa-star fa-sm"></i><i class="fas fa-star gray fa-sm"></i>
             </div>
             </div>
@@ -196,13 +196,13 @@
         <h3 class="fin">Afficher plus</h3>
         </section>
 
-        <section id="populaires">
+        <section id="populaires"> <!-- section contenant les hebergements les plus populaires -->
           <h2 class="debut">Les plus populaires</h2>
-          <i class="fas fa-chart-line fa-lg"></i>
+          <i class="fas fa-chart-line fa-lg"></i> <!-- logo de graphique à coté du titre -->
 
           <div id="populaires_items">
 
-            <a href="">
+            <a href=""> <!-- carte cliquable de l'hebergement populaire, pour l'instant le lien est vide -->
               <div class="populaires">
                 <div class="imgpop">
                   <img src="img/hotel_soleil.jpg" alt="Photo de l'hotel le soleil du matin">
@@ -211,7 +211,7 @@
                 <div class="text">
                   <h3>Hôtel Le soleil du matin</h3>
                   <p>Nuit à partir de 128<strong>€</strong></p>
-                  <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                  <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div> <!-- etoiles de notation de l'hebergement -->
                 </div>
               </div>
             </a>
@@ -250,15 +250,17 @@
         </section>
 
 
-        <section id="activites">
+        <section id="activites"> <!-- section contenant les activités à marseille -->
           <h2 id="activites_title">Activités à Marseille</h2>
 
           <div id="activites_items">
 
-            <a href="">
+            <a href=""> <!-- carte cliquable de l'activité, pour l'instant le lien est vide -->
               <div class="activite">
 
-                <div class="imgact" style="background-image: url(img/port.jpg);"></div>
+                <div class="imgact port">
+                  <img src="img/port.jpg" alt="photo du vieux port">
+                </div>
 
                 <div class="text">
                   <h3>Vieux Port</h3>
@@ -271,7 +273,9 @@
               <a href="">
                 <div class="activite">
 
-                  <div class="imgact fort" style="background-image: url(img/fort.jpg);"></div>
+                  <div class="imgact fort">
+                    <img src="img/fort.jpg" alt="photo du fort de pomegues">
+                  </div>
 
                   <div class="text">
                     <h3>Fort de Pomègues</h3>
@@ -282,7 +286,9 @@
               <a href="">
                 <div class="activite">
 
-                  <div class="imgact frioul" style="background-image: url(img/frioul.jpg);"></div>
+                  <div class="imgact frioul">
+                    <img src="img/frioul.jpg" alt="photo des iles de frioul">
+                  </div>
 
                   <div class="text">
                     <h3>Îles du Frioul</h3>
@@ -295,7 +301,9 @@
             <a href="">
               <div class="activite">
 
-                <div class="imgact calanques" style="background-image: url(img/calanques.jpg);"></div>
+                <div class="imgact calanques">
+                  <img src="img/calanques.jpg" alt="photo du parc National des calanques">
+                </div>
 
                 <div class="text">
                   <h3>Parc National des Calanques</h3>
@@ -308,7 +316,9 @@
               <a href="">
                 <div class="activite">
 
-                  <div class="imgact garde_longchamp" style="background-image: url(img/notre_dame.jpg);"></div>
+                  <div class="imgact garde_longchamp">
+                    <img src="img/notre_dame.jpg" alt="photo de notre dame de la garde">
+                  </div>
 
                   <div class="text">
                     <h3>Notre-Dame-de-la-Garde</h3>
@@ -319,7 +329,9 @@
               <a href="">
                 <div class="activite">
 
-                  <div class="imgact garde_longchamp" style="background-image: url(img/longchamp.jpg);"></div>
+                  <div class="imgact garde_longchamp">
+                    <img src="img/longchamp.jpg" alt="photo du parc longchamp">
+                  </div>
 
                   <div class="text">
                     <h3>Parc Longchamp</h3>
@@ -337,7 +349,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer> <!-- pied de page contenant les section A propos, Nos hebergements et Assistance -->
       <section>
         <h2>A propos</h2>
         <p>Fonctionnement du site</p>

@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /* police utilisé pour le site */
   font-family: 'Raleway';
   src: url('font/Raleway.ttf') format('truetype'),
   url('font/Raleway.eot') format('eot'),
@@ -13,7 +13,7 @@ body
   font-family: Raleway, Arial, "Times New Roman", serif;
 }
 
-#page
+#page /* pour toute la page sauf le footer */
 {
   width: 95%;
   margin:auto;
@@ -27,8 +27,7 @@ body
 }
 
 
-
-#top
+#top /* logo, nav et bouton "s'inscrire" */
 {
   display: flex;
   justify-content: space-between;
@@ -42,7 +41,7 @@ nav
   margin-right: 100px;
 }
 
-#top #inscrire
+#top #inscrire /* bouton "s'inscrire" */
 {
   color: #0065FC;
   position: absolute;
@@ -57,7 +56,7 @@ nav
   border-top: 2px solid white;
 }
 
-nav a
+nav a /* tous les liens de nav */
 {
   text-decoration: none;
   color: black;
@@ -69,20 +68,20 @@ nav a
   border-top: 2px solid white;
 }
 
-section a
+section a /* tous les liens contenus dans des sections */
 {
   text-decoration: none;
   color: black;
 }
 
-nav a:hover, #top #inscrire:hover
+nav a:hover, #top #inscrire:hover /* permet de changer la couleur et ajoute la bordure bleue au survol des boutons de nav et "s'inscrire" */
 {
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
 
 
-#form
+#form /* formulaire de recherche de ville */
 {
   display: flex;
   background-color: #F2F2F2;
@@ -92,14 +91,14 @@ nav a:hover, #top #inscrire:hover
   align-items: center;
 }
 
-.fa-map-marker-alt
+.fa-map-marker-alt /* icone de position de la recherche */
 {
   color: black;
   padding-left: 19px;
   padding-right: 19px;
 }
 
-#form p strong
+#form p strong /* bouton "rechercher" */
 {
   display: flex;
   color: white;
@@ -113,12 +112,12 @@ nav a:hover, #top #inscrire:hover
   justify-content: center;
 }
 
-#form p i
+#form p i /* permet de masquer l'icone de loupe de la version mobile */
 {
   display: none;
 }
 
-input[type="text"]
+input[type="text"] /* champ de saisie de la ville */
 {
   width: 234px;
   min-width: 234px;
@@ -130,7 +129,7 @@ input[type="text"]
 }
 
 
-#filtres
+#filtres /* section contenant les filtres */
 {
   display: flex;
   margin-top: 30px;
@@ -141,13 +140,13 @@ input[type="text"]
   margin-top: 17px;
 }
 
-#filtres_content
+#filtres_content /* section contenant les différents filtres */
 {
   display: flex;
   flex-wrap: wrap;
 }
 
-.filtre
+.filtre /* classe attribuee a chaque filtre */
 {
   display: flex;
   border-radius: 25px;
@@ -157,12 +156,12 @@ input[type="text"]
   margin-left: 25px;
 }
 
-.filtre:hover
+.filtre:hover /* permet d'ajouter une ombre grise au survol des filtres */
 {
   box-shadow: 4px 4px 6px #DEEBFF;
 }
 
-.filtre div
+.filtre div /* icone de chaque filtre */
 {
   display: flex;
   justify-content: center;
@@ -174,13 +173,13 @@ input[type="text"]
   margin-left: -2px;
 }
 
-.filtre p
+.filtre p /* texte de chaque filtre */
 {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-#info
+#info /* section contenant l'info */
 {
   display: flex;
   align-items: center;
@@ -188,7 +187,7 @@ input[type="text"]
   margin-bottom: 20px;
 }
 
-#info div
+#info div /* icone d'info */
 {
   display: flex;
   justify-content: center;
@@ -201,13 +200,13 @@ input[type="text"]
   margin-right: 10px;
 }
 
-#info h5
+#info h5 /* texte de l'info */
 {
   font-weight: normal;
   font-size: 1em;
 }
 
-#content
+#content /* section contenant le contenu dur du site (hebergement, les plus populaires, activités) */
 {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +215,7 @@ input[type="text"]
 }
 
 
-#hebergement
+#hebergement /* section contenant les hebergement a marseille */
 {
   background-color: #F2F2F2;
   border-radius: 15px;
@@ -225,19 +224,19 @@ input[type="text"]
   margin-bottom: 10px;
 }
 
-.debut
+.debut /* classe attribuée au contenu situé au dessus des cartes */
 {
   margin-left: 25px;
   padding-top: 20px;
 }
 
-.fin
+.fin /* classe attribuée au contenu situé en dessous des cartes */
 {
   margin-left: 25px;
   margin-top: 0px;
 }
 
-#hebergement_items
+#hebergement_items /* section contenant toutes les cartes d'hebergement */
 {
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +244,7 @@ input[type="text"]
   align-content: space-between;
 }
 
-.hebergement
+.hebergement /* classe attribué à chaque carte d'hebergement */
 {
   border: 5px white solid;
   border-radius: 15px;
@@ -256,48 +255,48 @@ input[type="text"]
   box-shadow: 6px 6px 15px lightgray;
 }
 
-.hebergement .text h3
+.hebergement .text h3 /* nom de l'hebergement */
 {
   margin-top: 6px;
   margin-bottom: 0px;
 }
 
-.text h3
+.text h3 /* nom de : l'hebergement, l'hebergement populaire ou l'activité */
 {
   font-size: 1.4em;
   font-weight: bold;
 }
 
-.hebergement .text p
+.hebergement .text p /* prix de l'hebergement */
 {
   margin-top: 6px;
   margin-bottom: 6px;
 }
 
-.fa-star.gray
+.fa-star.gray /* rend les étoiles de notation grise */
 {
   color: gray;
 }
 
-.star
+.star /* icones étoile */
 {
   margin-left: 14px;
 }
 
-.hebergement img
+.hebergement img /* image des hebergement */
 {
   border-top-left-radius: 10px;
   border-top-right-radius:10px;
 }
 
-.text
+.text /* texte de toutes les cartes */
 {
   width: 225px;
   font-size: 12px;
   padding-left: 14px;
 }
 
-#populaires
+#populaires /* section des hebergement populaires */
 {
   position: relative;
   width: 31%;
@@ -307,7 +306,7 @@ input[type="text"]
   height: 625px;
 }
 
-.fa-chart-line
+.fa-chart-line /* icone de graphique */
 {
   color: black;
   position: absolute;
@@ -315,7 +314,7 @@ input[type="text"]
   right: 40px;
 }
 
-#populaires_items
+#populaires_items /* section contenant toutes les cartes les plus populaires */
 {
   display: flex;
   flex-direction: column;
@@ -324,13 +323,13 @@ input[type="text"]
   height: 500px;
 }
 
-#populaires a
+#populaires a /* lien vide contenant les cartes populaires */
 {
   width: 90%;
   margin: auto;
 }
 
-.populaires
+.populaires /* classe attribuée a chaque carte populaire */
 {
   display: flex;
   border-radius: 15px;
@@ -339,7 +338,7 @@ input[type="text"]
   box-shadow: 6px 6px 15px lightgray;
 }
 
-.populaires img
+.populaires img /* images des hebergement populaires */
 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -347,80 +346,82 @@ input[type="text"]
   margin-top: 5px;
 }
 
-.populaires .text
+.populaires .text /* texte des cartes populaires */
 {
   position: relative;
   height: 130px;
   width: 190px;
 }
 
-.populaires .text p
+.populaires .text p /* prix des cartes populaires */
 {
   margin-top: -5px;
 }
 
-.populaires .text div
+.populaires .text div /* placement des étoiles de notation des populaires */
 {
   position: absolute;
   bottom: 0px;
 }
 
-#activites
+#activites /* section contenant les activités a marseille */
 {
   margin-top: 30px;
   margin-bottom: 60px;
   width: 100%;
 }
 
-.activite
+.activite /* carte de chaque activité */
 {
   border-radius: 15px;
   box-shadow: 6px 6px 15px lightgray;
 }
 
-.activite img
+.activite img /* image des activités */
 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: inherit;
+  height: inherit;
 }
 
-.imgact
+.imgact /* box contenant les images des activités */
 {
-  background-size: cover;
   width: 302px;
   height: 389px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  overflow: hidden;
 }
 
-.fort
+.fort /* box contenant l'image du fort */
 {
   height: 181px;
 }
 
-.frioul
+.frioul /* box contenant l'image de frioul */
 {
   height: 109px;
 }
 
-.garde_longchamp
+.garde_longchamp /* boxs contenant les images de notre dame et du parc longchamp */
 {
   height: 145px;
 }
 
-.activite .text
+.activite .text /* text des activités */
 {
   padding-bottom: 10px;
 }
 
-.column
+.column /* classe pour les cartes à afficher en colonne */
 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#activites_items
+#activites_items /* section contenant toutes les cartes d'activité */
 {
   height: 450px;
   max-height: 450px;
@@ -428,7 +429,7 @@ input[type="text"]
   justify-content: space-between;
 }
 
-footer
+footer /* pied de page */
 {
   display: flex;
   background-color: #F2F2F2;
@@ -440,17 +441,17 @@ footer
   max-width: 1450px;
 }
 
-footer section
+footer section /* section du foote */
 {
   margin-right: 220px;
 }
 
-i
+i /* affiche tous les icones en bleu */
 {
   color: blue;
 }
 
-@media all and (max-width: 480px)
+@media all and (max-width: 480px) /* ensemble de regles CSS pour les ecrans de moins de 480px */
 {
 
   body
@@ -458,7 +459,7 @@ i
     font-size: 1.5em;
   }
 
-  #page
+  #page /* toute la page */
   {
     width: 100%;
   }
@@ -470,7 +471,7 @@ i
     width: 120px;
   }
 
-  #top
+  #top /* logo, nav et bouton s'inscrire */
   {
     flex-direction: column;
   }
@@ -495,64 +496,64 @@ i
     border-top: none;
   }
 
-  nav a:hover
+  nav a:hover /* bordure bleu en bas des boutons de nav au survol */
   {
     border-top: none;
     border-bottom: 5px solid #0065FC;
   }
 
-  #top #inscrire:hover
+  #top #inscrire:hover /* pas de changement au survol du bouton s'inscrire */
   {
     border-top: none;
   }
 
-  h2
+  h2 /* titres des sections hebergement, populaires et activites*/
   {
     font-size: 1.2em;
   }
 
-  header h1
+  header h1 /* titre de la page */
   {
     padding-left: 20px;
     font-size: 1.2em;
   }
 
-  header p
+  header p /* sous titre de la page */
   {
     padding-left: 20px;
   }
 
-  #filtres
+  #filtres /* section contenant les filtres */
   {
     flex-direction: column;
     margin-left: 20px;
   }
 
-  #filtres_content
+  #filtres_content /* section contenant les différents filtres */
   {
     flex-wrap: wrap;
     margin-left: -20px;
   }
 
-  .filtre
+  .filtre /* classe attribuee a chaque filtre */
   {
     margin-top: 20px;
   }
 
 
 
-  #form
+  #form /* formulaire de recherche de ville */
   {
     width: 90%;
     margin: auto;
   }
 
-  #form p strong
+  #form p strong  /* bouton "rechercher" */
   {
     display: none;
   }
 
-  #form p i
+  #form p i /* icone de loupe de la version mobile */
   {
   display: flex;
   color: white;
@@ -566,19 +567,19 @@ i
   justify-content: center;
   }
 
-  input[type="text"]
+  input[type="text"] /* champ de saisie de la ville */
   {
    width: 80%;
    min-width: 100px;
    font-size: 0.8em;
   }
 
-  form
+  form /* permet au champ de recherche d'occuper la place disponible */
   {
     display: contents;
   }
 
-  #info div
+  #info div /* icone d'info */
   {
     width: 35px;
     height: 35px;
@@ -587,22 +588,22 @@ i
     margin-left: 20px;
   }
 
-  .text
+  .text /* texte des cartes */
   {
     font-size: 0.6em;
   }
 
-  .text h3
+  .text h3 /* titre des cartes */
   {
     font-size: 1.2em;
   }
 
-  #content
+  #content /* section contenant le contenu dur du site (hebergement, les plus populaires, activités) */
   {
     flex-direction: column;
   }
 
-  #populaires
+  #populaires /* section contenant les hebergements populaires */
   {
     border-radius: 0px;
     order: 1;
@@ -613,78 +614,78 @@ i
   }
 
 
-  #populaires_items
+  #populaires_items /* section contenant toutes les cartes les plus populaires */
   {
     width: auto;
     height: 460px;
   }
 
 
-  #activites
+  #activites /* section contenant les activités a marseille */
   {
     order: 3;
   }
 
-  section a
+  section a /* box lien des cartes */
   {
     width: 90%;
     margin: auto;
   }
 
-  .populaires
+  .populaires /* classe attribuée a chaque carte populaire */
   {
     width: 100%;
     max-width: 400px;
     margin: auto;
   }
 
-  .populaires .text p
+  .populaires .text p  /* prix des cartes populaires */
   {
     margin-top: -10px;
   }
 
-  #hebergement
+  #hebergement /* section contenant les hebergement a marseille */
   {
     background-color: white;
     width: 100%;
     order:2;
   }
 
-  .hebergement
+  .hebergement /* classe attribué à chaque carte d'hebergement */
   {
     margin-bottom: 20px;
     width: 100%;
     height:auto;
   }
 
-  .hebergement img
+  .hebergement img /* image des hebergement */
   {
     width: -webkit-fill-available;
     width: -moz-available;
   }
 
-  .star .fa-sm
+  .star .fa-sm /* taille des icones etoile */
   {
     font-size: .7em;
   }
 
-  .fin
+  .fin /* "afficher plus" */
   {
     margin-top: 20px;
   }
 
-  #activites
+  #activites /* section contenant les activités a marseille */
   {
     margin-top: 0px;
     margin-bottom: 20px;
   }
 
-  #activites_title
+  #activites_title /* titre "activite a marseille" */
   {
     margin-left: 20px;
   }
 
-  #activites_items
+  #activites_items  /* section contenant toutes les cartes d'activité */
   {
     height: auto;
     max-height: none;
@@ -692,51 +693,59 @@ i
     flex-direction: column;
   }
 
-  .imgact
+  .imgact /* box contenant les images des activités */
   {
     height:135px;
     width: auto;
-    background-position-y: -110px;
+
   }
 
-  .fort
+  .imgact img /* image des activites */
   {
-    background-position-y: -50px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: auto;
   }
 
-  .frioul
+  .port img /* image du port */
   {
-    background-position-y: 0px;
+    margin-top: -100px;
   }
 
-  .calanques
+  .fort img /* image du fort */
   {
-    background-position-y: -220px;
+    margin-top: -50px;
   }
 
-  .garde_longchamp
+
+  .calanques img /* image des calanques */
   {
-    background-position-y: -20px;
+    margin-top: -240px;
   }
 
-  #activites a
+  .garde_longchamp /* images de notre dame et du parc longchamp */
+  {
+    margin-top: -20px;
+  }
+
+  #activites a /* box lien des activites */
   {
     width: 335px;
     margin-bottom: 30px;
   }
 
-  .activite .text
+  .activite .text /* texte des activites */
   {
     width: auto;
     padding-bottom: 1px;
   }
 
-  h3
+  h3 /* titre des cartes */
   {
     font-size: 1em;
   }
 
-  footer
+  footer /* pied de page */
   {
     flex-direction: column;
     font-size: 0.7em;
@@ -749,9 +758,9 @@ i
 
 }
 
-@media all and (min-width: 480px) and (max-width: 1024px)
+@media all and (min-width: 480px) and (max-width: 1024px) /* regles pour les ecrans dont la largeur est comprise entre 480px et 1024px */
 {
-  #activites_items
+  #activites_items /* section contenant toutes les cartes d'activité */
   {
     flex-wrap: wrap;
     height: auto;
@@ -764,19 +773,19 @@ i
 
   }
 
-  .activite
+  .activite  /* carte de chaque activité */
   {
     margin-bottom: 15px;
   }
 
-  #populaires
+  #populaires /* section des hebergement populaires */
   {
     order:1;
     width: 100%;
     height: auto;
   }
 
-  #populaires_items
+  #populaires_items  /* section contenant toutes les cartes les plus populaires */
   {
     flex-direction: unset;
     flex-wrap: wrap;
@@ -784,25 +793,25 @@ i
   }
 
 
-  #populaires a
+  #populaires a /* lien vide contenant les cartes populaires */
   {
     width: auto;
     margin-bottom: 15px;
   }
 
-  #hebergement
+  #hebergement /* section contenant les hebergement a marseille */
   {
     order: 2;
     width: 100%;
     background-color: white;
   }
 
-  .filtre
+  .filtre  /* classe attribuee a chaque filtre */
   {
     margin-bottom: 15px;
   }
 
-  #activites
+  #activites  /* section contenant les activités a marseille */
   {
     order:3;
   }
